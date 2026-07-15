@@ -2,6 +2,7 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import Cursor from "@/components/Cursor";
+import { useLang } from "@/lib/LanguageContext";
 
 function Reveal({
   children,
@@ -58,6 +59,7 @@ const EXPERIENCE = [
 ];
 
 export default function HakkimdaPage() {
+  const { lang } = useLang();
   return (
     <>
       <Cursor />
@@ -259,7 +261,7 @@ export default function HakkimdaPage() {
                 data-hover
                 className="group flex items-center gap-4 bg-cream text-ink px-8 py-5 font-bold text-[11px] tracking-[0.22em] hover:gap-8 transition-all duration-300 shrink-0"
               >
-                WHATSAPP&apos;TAN YAZ
+                {lang === "tr" ? "WhatsApp'tan Yaz" : "Message on WhatsApp"}
                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden>
                   <path d="M3 9h12M10 4l5 5-5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>

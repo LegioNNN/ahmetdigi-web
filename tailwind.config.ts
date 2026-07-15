@@ -15,6 +15,7 @@ const config: Config = {
       animation: {
         marquee: "marquee 22s linear infinite",
         "marquee-reverse": "marquee-reverse 22s linear infinite",
+        "border-beam": "border-beam var(--duration,5s) linear infinite",
       },
       keyframes: {
         marquee: {
@@ -24,6 +25,10 @@ const config: Config = {
         "marquee-reverse": {
           from: { transform: "translateX(-50%)" },
           to:   { transform: "translateX(0)" },
+        },
+        "border-beam": {
+          "0%":   { "offset-distance": "0%" },
+          "100%": { "offset-distance": "100%" },
         },
       },
     },

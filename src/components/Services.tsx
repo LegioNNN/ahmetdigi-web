@@ -3,6 +3,7 @@ import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { useLang } from "@/lib/LanguageContext";
 import { content } from "@/lib/content";
+import { BorderBeam } from "@/components/ui/border-beam";
 
 export default function Services() {
   const { lang } = useLang();
@@ -29,7 +30,7 @@ export default function Services() {
             initial={{ opacity: 0, y: 36 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: i * 0.08, ease: [0.16, 1, 0.3, 1] }}
-            className="relative bg-cream p-8 sm:p-10 group hover:bg-ink hover:text-cream transition-colors duration-300 overflow-hidden cursor-default"
+            className="relative bg-cream p-8 sm:p-10 group hover:bg-ink hover:text-cream transition-colors duration-300 overflow-hidden cursor-default [&:hover>span]:opacity-100"
           >
             {/* Giant background number */}
             <div
@@ -39,6 +40,7 @@ export default function Services() {
               {item.no.replace("0", "")}
             </div>
 
+            <BorderBeam className="opacity-0 transition-opacity duration-300" colorFrom="#f967fb" colorTo="#6958d5" duration={4} />
             <div className="relative z-10">
               <p className="text-[11px] font-bold tracking-[0.22em] text-muted group-hover:text-cream/50 mb-8 transition-colors duration-300">
                 {item.no}

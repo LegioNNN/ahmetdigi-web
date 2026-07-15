@@ -3,6 +3,9 @@ import { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import { useLang } from "@/lib/LanguageContext";
 import { content } from "@/lib/content";
+import { TubesBackground } from "@/components/ui/neon-flow";
+import { TextScramble } from "@/components/ui/text-scramble";
+import { MagneticButton } from "@/components/ui/magnetic-button";
 
 function WordReveal({ text, delay = 0 }: { text: string; delay?: number }) {
   const ref = useRef(null);
@@ -63,7 +66,9 @@ export default function Hero() {
   const lines = t.headline.split("\n");
 
   return (
-    <section className="relative min-h-screen flex flex-col justify-end pb-24 pt-32 px-6 max-w-6xl mx-auto overflow-hidden">
+    <section className="relative min-h-screen overflow-hidden">
+    <TubesBackground className="absolute inset-0 opacity-40" />
+    <div className="relative z-10 min-h-screen flex flex-col justify-end pb-24 pt-32 px-6 max-w-6xl mx-auto overflow-hidden">
 
       {/* Dot grid background */}
       <div
@@ -127,7 +132,7 @@ export default function Hero() {
         transition={{ duration: 0.6, delay: 0.15 }}
         className="text-[11px] font-bold tracking-[0.28em] text-muted mb-7 uppercase"
       >
-        {t.badge}
+        <TextScramble text={t.badge} speed={35} />
       </motion.p>
 
       <div className="h-[2px] bg-ink mb-8 draw-line" style={{ maxWidth: 72 }} />
@@ -148,10 +153,11 @@ export default function Hero() {
         transition={{ duration: 0.65, delay: 0.7, ease: [0.16, 1, 0.3, 1] }}
         className="flex flex-col sm:flex-row items-start sm:items-center gap-6 mb-16"
       >
+        <MagneticButton>
         <a
           href="#contact"
           data-hover
-          className="group relative bg-ink text-cream text-[11px] font-bold tracking-[0.22em] px-9 py-4 overflow-hidden"
+          className="group relative bg-ink text-cream text-[11px] font-bold tracking-[0.22em] px-9 py-4 overflow-hidden inline-block"
         >
           <span className="relative z-10">{t.cta}</span>
           <span className="absolute inset-0 bg-cream scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300 ease-[cubic-bezier(0.16,1,0.3,1)]" />
@@ -159,6 +165,7 @@ export default function Hero() {
             {t.cta}
           </span>
         </a>
+        </MagneticButton>
         <p className="text-sm text-muted">{t.ctaSub}</p>
       </motion.div>
 
@@ -199,6 +206,7 @@ export default function Hero() {
         <span className="w-4 h-px bg-ink/20" />
         <span>AHMET.DIGITAL</span>
       </motion.div>
+    </div>
     </section>
   );
 }
