@@ -3,6 +3,7 @@ import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import Cursor from "@/components/Cursor";
 import { useLang } from "@/lib/LanguageContext";
+import { Globe } from "@/components/ui/globe";
 
 function Reveal({
   children,
@@ -82,6 +83,11 @@ export default function HakkimdaPage() {
 
         {/* ── HERO ── */}
         <section className="relative min-h-screen flex flex-col justify-end pb-20 pt-32 px-6 sm:px-12 max-w-[1400px] mx-auto overflow-hidden">
+          {/* Globe */}
+          <div className="absolute right-[-10%] top-[5%] w-[55vw] max-w-[700px] aspect-square opacity-30 pointer-events-none select-none">
+            <Globe />
+          </div>
+
           {/* Decorative ghost number */}
           <div
             aria-hidden
