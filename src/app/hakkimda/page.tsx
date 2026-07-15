@@ -253,11 +253,13 @@ export default function HakkimdaPage() {
                 </h3>
               </div>
               <a
-                href="mailto:ahmetozcans456@gmail.com"
+                href="https://wa.me/905551712526"
+                target="_blank"
+                rel="noopener noreferrer"
                 data-hover
                 className="group flex items-center gap-4 bg-cream text-ink px-8 py-5 font-bold text-[11px] tracking-[0.22em] hover:gap-8 transition-all duration-300 shrink-0"
               >
-                YAZI
+                WHATSAPP&apos;TAN YAZ
                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden>
                   <path d="M3 9h12M10 4l5 5-5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>

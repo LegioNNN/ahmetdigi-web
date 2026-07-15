@@ -36,17 +36,19 @@ export default function Cursor() {
 
   return (
     <>
+      {/* Blob — mix-blend-difference makes it invert on any bg */}
       <motion.div
         style={{ left: blobX, top: blobY }}
-        animate={{ scale: hovering ? 2.2 : 1, opacity: hovering ? 0.12 : 0.07 }}
+        animate={{ scale: hovering ? 2.2 : 1, opacity: hovering ? 0.15 : 0.1 }}
         transition={{ duration: 0.2 }}
-        className="fixed w-14 h-14 -translate-x-1/2 -translate-y-1/2 bg-ink rounded-full pointer-events-none z-[9997] mix-blend-multiply"
+        className="fixed w-14 h-14 -translate-x-1/2 -translate-y-1/2 bg-white rounded-full pointer-events-none z-[9997] mix-blend-difference"
       />
+      {/* Dot */}
       <motion.div
         style={{ left: dotX, top: dotY }}
         animate={{ scale: hovering ? 0 : 1 }}
         transition={{ duration: 0.15 }}
-        className="fixed w-[6px] h-[6px] -translate-x-1/2 -translate-y-1/2 bg-ink rounded-full pointer-events-none z-[9997]"
+        className="fixed w-[6px] h-[6px] -translate-x-1/2 -translate-y-1/2 bg-white rounded-full pointer-events-none z-[9997] mix-blend-difference"
       />
     </>
   );
