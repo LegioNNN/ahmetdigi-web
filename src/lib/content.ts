@@ -17,36 +17,69 @@ export const content = {
     },
     services: {
       title: "Hizmetler",
-      items: [
+      categories: [
         {
-          no: "01",
-          name: "Sosyal Medya Yönetimi",
-          desc: "İçerik üretimi, planlama ve topluluk yönetimi. Markanız her platformda aktif ve tutarlı.",
+          label: "Geliştirme & Teknoloji",
+          items: [
+            {
+              name: "Web Geliştirme",
+              desc: "Hızlı, SEO dostu, modern web siteleri ve web uygulamaları. Performans öncelikli.",
+            },
+            {
+              name: "E-Ticaret Çözümleri",
+              desc: "Online satış altyapısı, ödeme entegrasyonu ve stok yönetimi. Satışa hazır dijital mağaza.",
+            },
+            {
+              name: "Dijital Dönüşüm",
+              desc: "Geleneksel iş akışlarını dijitalleştiriyoruz. Sıfırdan çevrimiçi varlık inşası.",
+            },
+            {
+              name: "Otomasyon & Entegrasyon",
+              desc: "Randevu, CRM ve WhatsApp entegrasyonları. Manuel işleri otomatiğe bağlıyoruz.",
+            },
+          ],
         },
         {
-          no: "02",
-          name: "Dijital Dönüşüm",
-          desc: "Dijitalde olmayan markaları çevrimiçi varlığa taşıyoruz. Sıfırdan dijital kimlik inşası.",
+          label: "Pazarlama & Büyüme",
+          items: [
+            {
+              name: "SEO & Yerel SEO",
+              desc: "Arama motorlarında üst sıralar. Yerel aramalarda işletmenizi öne çıkarıyoruz.",
+            },
+            {
+              name: "Performans Pazarlaması",
+              desc: "Google ve Meta reklamları. Ölçülebilir, satışa dönüşen kampanya yönetimi.",
+            },
+            {
+              name: "Google Maps Optimizasyonu",
+              desc: "Haritalarda görünürlük. Müşteriler işletmenizi kolayca bulsun.",
+            },
+            {
+              name: "Sosyal Medya Yönetimi",
+              desc: "İçerik üretimi, planlama ve topluluk yönetimi. Her platformda aktif ve tutarlı.",
+            },
+            {
+              name: "Sosyal Medya Büyümesi",
+              desc: "Organik takipçi artışı, etkileşim optimizasyonu ve satışa dönüştüren stratejiler.",
+            },
+          ],
         },
         {
-          no: "03",
-          name: "Sosyal Medya Büyümesi",
-          desc: "Organik takipçi artışı, etkileşim optimizasyonu ve satışa dönüştüren içerik stratejileri.",
-        },
-        {
-          no: "04",
-          name: "UI/UX Tasarım",
-          desc: "Kullanıcı odaklı arayüzler. Estetik ve işlevsellik bir arada, marka diline sadık.",
-        },
-        {
-          no: "05",
-          name: "Web Geliştirme",
-          desc: "Hızlı, SEO dostu, modern web siteleri ve web uygulamaları. Performans öncelikli.",
-        },
-        {
-          no: "06",
-          name: "Marka Kimliği",
-          desc: "Logo, renk paleti, tipografi ve görsel dil. Tutarlı ve akılda kalıcı marka sistemi.",
+          label: "Tasarım & Marka",
+          items: [
+            {
+              name: "Marka Kimliği",
+              desc: "Logo, renk paleti, tipografi ve görsel dil. Tutarlı ve akılda kalıcı marka sistemi.",
+            },
+            {
+              name: "UI/UX Tasarım",
+              desc: "Kullanıcı odaklı arayüzler. Estetik ve işlevsellik bir arada, marka diline sadık.",
+            },
+            {
+              name: "İçerik & Görsel Üretimi",
+              desc: "Fotoğraf, video ve grafik tasarım. Markanızı yansıtan profesyonel görseller.",
+            },
+          ],
         },
       ],
     },
@@ -99,36 +132,69 @@ export const content = {
     },
     services: {
       title: "Services",
-      items: [
+      categories: [
         {
-          no: "01",
-          name: "Social Media Management",
-          desc: "Content creation, scheduling, and community management. Your brand active and consistent on every platform.",
+          label: "Development & Technology",
+          items: [
+            {
+              name: "Web Development",
+              desc: "Fast, SEO-friendly, modern websites and web apps. Performance first.",
+            },
+            {
+              name: "E-Commerce Solutions",
+              desc: "Online sales infrastructure, payment integration, and inventory management. A store ready to sell.",
+            },
+            {
+              name: "Digital Transformation",
+              desc: "Digitizing traditional workflows. Building online presence from scratch.",
+            },
+            {
+              name: "Automation & Integration",
+              desc: "Booking, CRM, and WhatsApp integrations. Turning manual work into automation.",
+            },
+          ],
         },
         {
-          no: "02",
-          name: "Digital Transformation",
-          desc: "Taking offline brands online. Building digital presence from scratch.",
+          label: "Marketing & Growth",
+          items: [
+            {
+              name: "SEO & Local SEO",
+              desc: "Top rankings on search engines. Making your business stand out in local searches.",
+            },
+            {
+              name: "Performance Marketing",
+              desc: "Google and Meta ads. Measurable campaigns that convert to sales.",
+            },
+            {
+              name: "Google Maps Optimization",
+              desc: "Visibility on maps. Let customers find your business easily.",
+            },
+            {
+              name: "Social Media Management",
+              desc: "Content creation, scheduling, and community management. Active and consistent on every platform.",
+            },
+            {
+              name: "Social Media Growth",
+              desc: "Organic follower growth, engagement optimization, and strategies that convert to sales.",
+            },
+          ],
         },
         {
-          no: "03",
-          name: "Social Media Growth",
-          desc: "Organic follower growth, engagement optimization, and content strategies that convert to sales.",
-        },
-        {
-          no: "04",
-          name: "UI/UX Design",
-          desc: "User-centered interfaces. Aesthetic and functional, true to your brand language.",
-        },
-        {
-          no: "05",
-          name: "Web Development",
-          desc: "Fast, SEO-friendly, modern websites and web apps. Performance first.",
-        },
-        {
-          no: "06",
-          name: "Brand Identity",
-          desc: "Logo, color palette, typography, and visual language. A consistent, memorable brand system.",
+          label: "Design & Brand",
+          items: [
+            {
+              name: "Brand Identity",
+              desc: "Logo, color palette, typography, and visual language. A consistent, memorable brand system.",
+            },
+            {
+              name: "UI/UX Design",
+              desc: "User-centered interfaces. Aesthetic and functional combined, true to your brand language.",
+            },
+            {
+              name: "Content & Visual Production",
+              desc: "Photography, video, and graphic design. Professional visuals that reflect your brand.",
+            },
+          ],
         },
       ],
     },
