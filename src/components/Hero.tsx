@@ -50,22 +50,6 @@ export default function Hero() {
   const { lang } = useLang();
   const t = content[lang].hero;
 
-  const [count, setCount] = useState(0);
-  useEffect(() => {
-    let frame: number;
-    const target = 50;
-    const duration = 1800;
-    const start = performance.now();
-    const tick = (now: number) => {
-      const progress = Math.min((now - start) / duration, 1);
-      const ease = 1 - Math.pow(1 - progress, 3);
-      setCount(Math.round(ease * target));
-      if (progress < 1) frame = requestAnimationFrame(tick);
-    };
-    const timer = setTimeout(() => { frame = requestAnimationFrame(tick); }, 800);
-    return () => { clearTimeout(timer); cancelAnimationFrame(frame); };
-  }, []);
-
   const lines = t.headline.split("\n");
 
   return (
@@ -172,30 +156,13 @@ export default function Hero() {
         <p className="text-sm text-muted">{t.ctaSub}</p>
       </motion.div>
 
-      {/* Bottom row: sub + stat */}
+      {/* Bottom row: sub */}
       <motion.div
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.9 }}
-        className="flex flex-col sm:flex-row gap-10 sm:gap-20 items-start"
       >
-        <p className="max-w-sm text-base text-muted leading-relaxed">{t.sub}</p>
-
-        {/* Stats cluster */}
-        <div className="flex gap-10 shrink-0">
-          {[
-            { val: `${count}+`, label: lang === "tr" ? "PROJE" : "PROJECTS" },
-            { val: "3+", label: lang === "tr" ? "YIL" : "YEARS" },
-            { val: "20+", label: lang === "tr" ? "MÜŞTERİ" : "CLIENTS" },
-          ].map(({ val, label }) => (
-            <div key={label}>
-              <div className="text-[clamp(1.8rem,4vw,3rem)] font-bold tracking-tight leading-none tabular-nums">
-                {val}
-              </div>
-              <div className="text-[10px] font-bold tracking-[0.22em] text-muted mt-1.5">{label}</div>
-            </div>
-          ))}
-        </div>
+        <p className="max-w-lg text-base text-muted leading-relaxed">{t.sub}</p>
       </motion.div>
 
       {/* Bottom-right corner marker */}
