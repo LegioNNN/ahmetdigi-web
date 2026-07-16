@@ -96,17 +96,6 @@ export default function HakkimdaPage() {
             20
           </div>
 
-          {/* Age badge */}
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.4, duration: 0.6 }}
-            className="absolute top-28 right-8 sm:right-12 text-right"
-          >
-            <div className="text-[11px] font-bold tracking-[0.25em] text-cream/40">YAŞ</div>
-            <div className="text-5xl font-bold leading-none">20</div>
-          </motion.div>
-
           {/* Label */}
           <motion.p
             initial={{ opacity: 0 }}
