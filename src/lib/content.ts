@@ -10,8 +10,8 @@ export const content = {
     },
     hero: {
       badge: "DİJİTAL AJANS",
-      headline: "Markanı\nDijitalde\nGüçlendiriyoruz.",
-      sub: "Sosyal medya yönetiminden web geliştirmeye, marka kimliğinden dijital dönüşüme — her şey tek çatı altında.",
+      headline: "Geleneksel işi\ndijitale\ntaşıyoruz.",
+      sub: "Web geliştirmeden yerel SEO'ya, marka kimliğinden performans pazarlamasına — işletmene ölçülebilir ticari değer katan dijital sistemler kuruyoruz.",
       cta: "Başlayalım",
       ctaSub: "Ücretsiz keşif görüşmesi",
     },
@@ -125,8 +125,8 @@ export const content = {
     },
     hero: {
       badge: "DIGITAL AGENCY",
-      headline: "We Amplify\nYour Brand\nOnline.",
-      sub: "From social media management to web development, brand identity to digital transformation — everything under one roof.",
+      headline: "We take\nbusiness\ndigital.",
+      sub: "From web development to local SEO, brand identity to performance marketing — we build digital systems that deliver measurable value to your business.",
       cta: "Let's Start",
       ctaSub: "Free discovery call",
     },

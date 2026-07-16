@@ -32,7 +32,7 @@ function Reveal({
 const SKILLS = [
   "Next.js",
   "React",
-  "Supabase",
+  "PostgreSQL",
   "JavaScript",
   "TypeScript",
   "Dijital Reklamcılık",
