@@ -131,6 +131,10 @@ export const content = {
         { no: "03", title: "Üretim", desc: "Tasarım, içerik ve teknik altyapıyı hayata geçiriyoruz." },
         { no: "04", title: "Büyüme", desc: "Sonuçları ölçüyoruz, optimize ediyoruz, büyütüyoruz." },
       ],
+      goal: {
+        label: "HEDEF",
+        title: "Büyüyen işin.",
+      },
     },
     cta: {
       badge: "İLETİŞİM",
@@ -275,6 +279,10 @@ export const content = {
         { no: "03", title: "Production", desc: "We build the design, content, and technical foundation." },
         { no: "04", title: "Growth", desc: "We measure results, optimize, and scale." },
       ],
+      goal: {
+        label: "GOAL",
+        title: "Your growing business.",
+      },
     },
     cta: {
       badge: "CONTACT",
