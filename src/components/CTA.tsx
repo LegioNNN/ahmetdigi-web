@@ -41,12 +41,6 @@ export default function CTA() {
             </svg>
             {lang === "tr" ? "WhatsApp'tan Yaz" : "Message on WhatsApp"}
           </motion.a>
-          <a
-            href={`mailto:${t.email}`}
-            className="text-cream/60 text-sm hover:text-cream transition-colors"
-          >
-            {t.email}
-          </a>
         </div>
       </motion.div>
     </section>

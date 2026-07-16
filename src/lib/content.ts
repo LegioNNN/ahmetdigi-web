@@ -4,7 +4,7 @@ export const content = {
   tr: {
     nav: {
       services: "Hizmetler",
-      about: "Hakkımda",
+      about: "Hakkımda & Deneyim",
       process: "Süreç",
       contact: "İletişim",
     },
@@ -119,7 +119,7 @@ export const content = {
   en: {
     nav: {
       services: "Services",
-      about: "About",
+      about: "About & Experience",
       process: "Process",
       contact: "Contact",
     },
