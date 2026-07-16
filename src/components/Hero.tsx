@@ -14,15 +14,18 @@ function WordReveal({ text, delay = 0 }: { text: string; delay?: number }) {
   return (
     <span ref={ref} className="inline">
       {words.map((word, i) => (
-        <span key={i} className="inline-block overflow-hidden">
-          <motion.span
-            className="inline-block"
-            initial={{ y: "110%" }}
-            animate={inView ? { y: 0 } : {}}
-            transition={{ delay: delay + i * 0.055, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
-          >
-            {word}{i < words.length - 1 ? " " : ""}
-          </motion.span>
+        <span key={i} className="inline">
+          <span className="inline-block overflow-hidden align-bottom">
+            <motion.span
+              className="inline-block"
+              initial={{ y: "110%" }}
+              animate={inView ? { y: 0 } : {}}
+              transition={{ delay: delay + i * 0.055, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+            >
+              {word}
+            </motion.span>
+          </span>
+          {i < words.length - 1 ? " " : ""}
         </span>
       ))}
     </span>
