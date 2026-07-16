@@ -88,14 +88,6 @@ export default function HakkimdaPage() {
             <Globe />
           </div>
 
-          {/* Decorative ghost number */}
-          <div
-            aria-hidden
-            className="absolute right-[-2vw] top-[8%] text-[clamp(12rem,38vw,36rem)] font-bold leading-none text-cream/[0.025] select-none pointer-events-none"
-          >
-            20
-          </div>
-
           {/* Label */}
           <motion.p
             initial={{ opacity: 0 }}

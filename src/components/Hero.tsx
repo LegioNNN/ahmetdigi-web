@@ -67,7 +67,7 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-screen overflow-hidden">
-    <TubesBackground className="absolute inset-0 opacity-60 mix-blend-multiply" />
+    <TubesBackground className="absolute inset-0 opacity-70 mix-blend-screen" />
     <div className="relative z-10 min-h-screen flex flex-col justify-end pb-24 pt-32 px-6 max-w-6xl mx-auto overflow-hidden">
 
       {/* Dot grid background */}

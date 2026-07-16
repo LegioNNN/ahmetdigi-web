@@ -106,7 +106,7 @@ export default function Nav() {
           {navLinks.map((key) => (
             <a
               key={key}
-              href={`#${key}`}
+              href={key === "about" ? "/hakkimda" : `#${key}`}
               onClick={() => setMenuOpen(false)}
               className="text-4xl font-bold tracking-tight hover:opacity-60 transition-opacity cursor-pointer"
             >
