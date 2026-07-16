@@ -150,7 +150,7 @@ export default function HakkimdaPage() {
               <Reveal delay={0.05}>
                 <p className="text-xl sm:text-2xl leading-[1.65] text-cream/85">
                   Bilgisayar Programcılığı eğitimimle kazandığım güçlü altyapıyı,{" "}
-                  <span className="text-cream font-semibold">Next.js, React ve Supabase</span> gibi
+                  <span className="text-cream font-semibold">Next.js, TypeScript ve PostgreSQL</span> gibi
                   modern teknolojilerle birleştirerek işletmeler için sadece web sitesi değil;
                   hızlı, SEO dostu ve yüksek performanslı{" "}
                   <span className="text-cream font-semibold">dijital ekosistemler</span> inşa ediyorum.
